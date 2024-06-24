@@ -1,3 +1,3 @@
 package defaultset
 
-const DefaultSetVersion = "0.0.1"
+const DefaultSetVersion = "v0.0.2" // git tag v0.0.2
