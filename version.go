@@ -1,3 +1,3 @@
 package defaultset
 
-const Version = "0.0.1"
+const DefaultSetVersion = "0.0.1"
