@@ -2,8 +2,6 @@ package defaultset
 
 import "fmt"
 
-const Version = "0.0.1"
-
 func Red(text string) string {
 	return fmt.Sprintf("\033[31m\033[01m%s\033[0m", text)
 }
