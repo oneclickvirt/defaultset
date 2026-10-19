@@ -1,6 +1,7 @@
 name: CI
 jobs:
   test:
+    timeout-minutes: 30
     strategy:
       matrix:
         go:
@@ -18,7 +19,7 @@ jobs:
     - name: Test
       run: go test ./... -coverprofile=coverage.txt
     - name: Create Tag
-      if: success()
+      if: ${{ success() && !inputs.test_only }}
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
@@ -30,4 +31,9 @@ jobs:
     env:
       GOPROXY: https://proxy.golang.org|direct
 'on':
-  workflow_dispatch: null
+  workflow_dispatch:
+    inputs:
+      test_only:
+        description: Run tests without creating tags, editing README or publishing binaries
+        type: boolean
+        default: false
