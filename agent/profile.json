@@ -1,0 +1,19 @@
+{
+  "repository": "oneclickvirt/defaultset",
+  "branch": "main",
+  "skill_name": "oneclickvirt-defaultset",
+  "purpose": "Integrate the shared Go configuration library used by OneClickVirt benchmark modules.",
+  "notes": [
+    "Read go.mod and the exported Go types before changing consumers. Preserve compatibility with current benchmark modules; this library is not an independently runnable diagnostic."
+  ],
+  "guide": "https://www.spiritlhl.net/guide/agent_integrations.html",
+  "releases": false,
+  "mcp": false,
+  "source_files": [
+    "go.mod"
+  ],
+  "purpose_zh": "在 Go 检测模块中使用共享配置库，并保持调用兼容。",
+  "notes_zh": [
+    "先阅读 go.mod 和导出类型，保持当前检测模块的调用兼容。此库不作为独立检测程序运行。"
+  ]
+}

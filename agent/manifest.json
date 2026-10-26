@@ -1,0 +1,10 @@
+{
+  "repository": "oneclickvirt/defaultset",
+  "skill_name": "oneclickvirt-defaultset",
+  "mcp": false,
+  "files": {
+    "agent/profile.json": "f5ac2b0198456d7aac88085139e7695c135f1033e8c6e4f99b201587827209b5",
+    "skills/oneclickvirt-defaultset/SKILL.md": "89121af6e47cd6c6a98ed02288924270c3cf88619b38a55f5d10ddc5843cf55a",
+    "skills/oneclickvirt-defaultset/SKILL_ZH.md": "3cd97ecaa42cac63384680d219c2f6d43012947ad73b9ad0bed1e166a80388a2"
+  }
+}
